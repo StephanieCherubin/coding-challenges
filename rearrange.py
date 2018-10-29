@@ -2,14 +2,16 @@
 import random
 import sys
 
+
 def rearrange(list):
-    random_index = random.randrange(0, len(list))
+    random_index = random.randrange(len(list))
     counter = 5
     while counter > 0:
         word_word = list.pop(random_index)
         list.append(word_word)
         counter -= 1
-    print(list)
+    result = ' '.join(list)
+    print(result)
 
 
 def main(list):
@@ -17,7 +19,5 @@ def main(list):
 
 
 if __name__ == '__main__':
-    # mylist = []
-
     params = sys.argv[1:]
     main(params)
