@@ -1,4 +1,3 @@
-# Replace the string you want to shuffle with myString
 import random
 import sys
 
