@@ -19,7 +19,7 @@ input = list.split()
 # use the above function to take frequency and place back in the dictionary
 frequency_dictionary = frequency(input)
 print(frequency_dictionary)
-
+list = text_file.close()
 # uppercase, lowercase, punctuation
 # remove everything else.
 # function read filename
