@@ -34,3 +34,14 @@ print('Final Dict: {}\n'.format(final_dictionary))
 print('My List: {}'.format(myList))
 
 text_file.close()
+
+
+
+def randomized_item():
+    for value in final_dictionary:
+        value = final_dictionary[key]
+    return value/total_word_count
+
+print(randomized_item())
+
+
