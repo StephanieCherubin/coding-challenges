@@ -9,16 +9,6 @@ def frequency(words):
             frequency_dictionary[key] = 1
     return frequency_dictionary
 
-
-# for loop to get key.
-# Get value to key.
-# Take the range in the dictionary and sum them.
-# For item in range.
-# Iterate 4 times if four.
-# Append keys in array
-# Make sure the frequency of each list item is accounted for.
-# take a random index from list
-
 # open this text file
 # FIXME: figure out how to use with open that's self closing
 text_file = open("dr-seuss.txt","r")
@@ -36,12 +26,12 @@ print('My List: {}'.format(myList))
 text_file.close()
 
 
+def randomized_item(my_dict):
+    for key, value in my_dict.items():
+        probability = float(value) / total_word_count
+        print(key + " => " + str(probability))
 
-def randomized_item():
-    for value in final_dictionary:
-        value = final_dictionary[key]
-    return value/total_word_count
+randomized_item(final_dictionary)
 
-print(randomized_item())
 
 
