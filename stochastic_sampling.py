@@ -1,4 +1,3 @@
-
 def frequency(words):
     frequency_dictionary = {}
 
@@ -9,8 +8,8 @@ def frequency(words):
             frequency_dictionary[key] = 1
     return frequency_dictionary
 
+
 # open this text file
-# FIXME: figure out how to use with open that's self closing
 text_file = open("dr-seuss.txt","r")
 # read this text file and place items in a list to split
 list = text_file.read()
@@ -32,6 +31,7 @@ def randomized_item(my_dict):
         print(key + " => " + str(probability))
 
 randomized_item(final_dictionary)
+
 
 
 

@@ -24,6 +24,12 @@ def histogram():
     # print(final_dictionary.keys())
     print('My List: {}'.format(myList))
     text_file.close()
-histogram()
+    return final_dictionary
+
+my_dictionary = histogram()
 
 
+def intermediate_histogram(my_dictionary):
+    for key in my_dictionary:
+        print('{} {}'.format(key, my_dictionary[key]))
+intermediate_histogram(my_dictionary)
