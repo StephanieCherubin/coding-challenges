@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "testenvironment/bin/python",
+    "python.linting.pylintEnabled": true
+}
