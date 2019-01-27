@@ -1,10 +1,10 @@
-# Write a function that takes a string as input
-# and reverses only the vowels of a string.
+'''Write a function that takes a string as input
+and reverses only the vowels of a string.'''
 
 def reverse_vowels(string_proper):
     vowels = ['a', 'e', 'i', 'o', 'u']
 
-    if(alphabet in vowels):
+    if ( alphabet in vowels):
         return True
     else:
         return False
