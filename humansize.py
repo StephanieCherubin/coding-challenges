@@ -2,6 +2,11 @@ SUFFIXES = {1000: ['KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'],
             1024: ['KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB']}
 
 def approximate_size(size, a_kilobyte_is_1024_bytes=True):
+    # required argument have to go first in parentheses
+    # size is required
+    # a_kilobyte_is_1024_bytes is not required because it is already set as true
+
+    # You can document a Python function by giving it a documentation string (docstring for short).
     '''Convert a file size to human-readable form.
 
     Keyword arguments:
