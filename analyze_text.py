@@ -12,4 +12,4 @@ def analyze_text(text):
         if text[i] == "e" or text[i] == "E":
             total_e = total_e + 1
     percent = total_e/totalletters*100
-    return "The text contains " +str(totalletters)+ " alphabetic characters, of which " +str(total_e)+ " ("+str(percent)+ "%) are 'e'."
+    return "The text contains " + str(totalletters)+ " alphabetic characters, of which " + str(total_e)+ " ("+ str(percent) + "%) are 'e'."

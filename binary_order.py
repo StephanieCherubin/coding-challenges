@@ -1,6 +1,8 @@
-# class BinarySearchTree(object):
-    # def __init__(self, arg):
-    #     self.arg = arg
+
+
+class BinarySearchTree(object):
+    def __init__(self, arg):
+        self.arg = arg
 
 class Node:
     def __init__(self, data):
@@ -15,4 +17,6 @@ class Node:
             else:
                 self.left.append(data)
 
+    insert(self, data)
+    
 

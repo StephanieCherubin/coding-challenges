@@ -37,8 +37,8 @@ def anagram_detector(string1, string2):
         if character in frequency_string1 and frequency_string1 > 0:
             frequency_string1[character] -= 1
         else:
-            return false
+            return False
 
     for character in frequency_string1:
         if frequency_string1[character] > 0:
-            return false
+            return False
