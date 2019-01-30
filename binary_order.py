@@ -1,4 +1,4 @@
-
+'''In an inorder traversal, we recursively do an inorder traversal on the left subtree, visit the root node, and finally do a recursive inorder traversal of the right subtree.'''
 
 class BinarySearchTree(object):
     def __init__(self, arg):
@@ -17,6 +17,11 @@ class Node:
             else:
                 self.left.append(data)
 
-    insert(self, data)
+        return 
     
 
+root = Node(1)
+root.left      = Node(2)
+root.right     = Node(3)
+root.left.left  = Node(4)
+root.left.right  = Node(5)
