@@ -22,6 +22,7 @@ print(biggest_product([ 1, 0, 1, 0, 1]))
 print(biggest_product([-90, 1]))
 print(biggest_product([-9]))
 print(biggest_product([64, 25, 12, 22, 11, 1,2,44,3,122, 23, 34]))
+print(biggest_product([2, 4, 6, 8]))
 
 '''Method 2'''
 # from itertools import permutations
