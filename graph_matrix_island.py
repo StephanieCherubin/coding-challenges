@@ -12,13 +12,20 @@ length: 3'''
 
 '''Knowns:
 Islands are rectangular.
-The 1 can have at most 8 neighbors.'''
+The island can have at most 8 neighbors.'''
 
 '''Gameplan:
-Traverse the array horizontally, removing the 1s if there is a 1 before or after it'''
+Traverse through each row checking for a 1.
+The first one you find will be the uppermost leftmost corner of the island.
+Keep traversing for the bottom_right_corner variable.
+This number should keep updating until there are no more 1s and which will denote the bottom right hand corner.
+Now that you have two corners, you can find out the area of the island using indexing.
+'''
 
-for c in 0 < ocean.count {
-  for r in 0 < ocean.count {
-    print()
-  }
-}
+top_left_corner = []
+bottom_right_corner = []
+# for c in 0 < ocean.count {
+#   for r in 0 < ocean.count {
+#     print()
+#   }
+# }
