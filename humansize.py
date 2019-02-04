@@ -6,7 +6,8 @@ def approximate_size(size, a_kilobyte_is_1024_bytes=True):
     # size is required
     # a_kilobyte_is_1024_bytes is not required because it is already set as true
 
-    # You can document a Python function by giving it a documentation string (docstring for short).
+    # You can document a Python function/class by giving it a documentation string (docstring for short) after every definition of a function or class.
+    # You can also add it to the docstring by using self.__doc___
     '''Convert a file size to human-readable form.
 
     Keyword arguments:
