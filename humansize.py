@@ -8,6 +8,7 @@ def approximate_size(size, a_kilobyte_is_1024_bytes=True):
 
     # You can document a Python function/class by giving it a documentation string (docstring for short) after every definition of a function or class.
     # You can also add it to the docstring by using self.__doc___
+    # In Python, everything is a dictionary.
     '''Convert a file size to human-readable form.
 
     Keyword arguments:
@@ -38,3 +39,4 @@ def approximate_size(size, a_kilobyte_is_1024_bytes=True):
 if __name__ == '__main__':
     print(approximate_size(1000000000000, False))
     print(approximate_size(1000000000000))
+
