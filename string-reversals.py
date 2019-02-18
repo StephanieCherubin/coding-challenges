@@ -3,6 +3,10 @@
 
 import sys
 
-def string_reversal(forward_string):
+def string_reversal():
     forward_string = "how now brown cow"
-    return forward_string[::-1]
+    print(forward_string[::-1])
+
+
+if __name__ == "__main__":
+    string_reversal()
