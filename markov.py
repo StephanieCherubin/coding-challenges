@@ -3,7 +3,7 @@ import sys
 
 def generateModel(text, order):
     model = {}
-    for i in range(0, len(text) - order):
+    for i in range(len(text) - order):
         fragment = text[i:i + order]
         next_letter = text[i + order]
         if fragment not in model:
@@ -31,14 +31,7 @@ def generateText(text, order, length):
         currentFragment = currentFragment[1:] + newCharacter
     print(output)
 
-text = """I just got word today that the money is gonna be OK
-and the weather oughta hold out through the weekend
-Fall is settling in, the days are getting short again
-and the morning is getting real nice for sleeping
-Every time it gets colder I get another year older
-I start looking for lines in the bathroom mirror
-but when I lay down at night I swear I must have done something right
-cause I am still so damn glad to be here"""
+text = """one fish two fish red fish blue fish"""
 
 if __name__ == "__main__":
     generateText(text, int(sys.argv[1]), int(sys.argv[2]))
