@@ -1,0 +1,1 @@
+file = open('anna_karenina.txt', encoding='utf-8')
