@@ -14,12 +14,12 @@ def countDistinctElements(my_list):
             values_dictionary[element] += 1
 
     for key, value in values_dictionary.items():
-        print ("% d : % d"%(key, value)) 
-        count +=1
-    print(f"Distinct element count is: {count}") 
+        # print ("% d : % d"%(key, value)) 
+        if value > 1:
+            print(f"The number {key} occurs {value} times.")
+            count +=1
+    print(f"Total distinct element count is: {count}") 
 
 if __name__ == "__main__":
-    # zillow = zillowQuestion([1,2,3,2,3,3,44,4,4,3,2])
     my_list = [1,2,3,2,3,3,44,4,4,3,2]
     countDistinctElements(my_list)
-    # print(result)
