@@ -33,7 +33,7 @@ Using common data structures.
 If the input is an array, make sure to use a non-sorted array with both positive and negative values in various ranges.
 - Discuss tradeoffs using space and time complexity
 
-# Common Behavioral Interview Questions
+## Common Behavioral Interview Questions
 
 1. What’s your favorite app?
 1. What’s a time you struggled with a team? What did you do to improve the situation? What was the outcome? 
