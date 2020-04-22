@@ -16,9 +16,9 @@ def countDistinctElements(my_list):
     for key, value in values_dictionary.items():
         # print ("% d : % d"%(key, value)) 
         if value > 1:
-            print(f"The number {key} occurs {value} time(s).")
+            print("The number { } occurs { } time(s).".format(key, value))
             count +=1
-    print(f"Total distinct element count is: {count}") 
+    print("Total distinct element count is: { }.".format(count)) 
 
 if __name__ == "__main__":
     my_list = [1,2,3,2,3,3,44,4,4,3,2]
