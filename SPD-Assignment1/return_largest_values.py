@@ -14,4 +14,7 @@ k=3
 
 print(return_largest_values(arr, k))
 
+def largest_values(arr, k):
+    sorted_array = arr.sorted(reverse = True)
+    print(sorted_array)
   
