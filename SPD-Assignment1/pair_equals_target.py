@@ -11,7 +11,7 @@ def pairEqualsTarget(arr, t):
     for i in range(0, len(arr)): 
         pair = t-arr[i] 
         if (pair in s): 
-            print(arr[i], pair)
+            print([arr[i], pair])
         s.add(arr[i]) 
   
 A = [5, 3, 6, 8, 2, 4, 7] 
