@@ -2,18 +2,29 @@
 # Example: 
     # Input: a=[5, 3, 6, 8, 2, 4, 7], t=10
     # Ouput:  [3, 7] or [6, 4] or [8, 2]
+A = [5, 3, 6, 8, 2, 4, 7] 
+t = 10
 
-def pairEqualsTarget(arr, t):
+def pairEqualsTarget(A, t):
       
     # Create an empty hash set 
     s = set()
       
-    for i in range(0, len(arr)): 
-        pair = t-arr[i] 
+    for i in range(len(A)): 
+        pair = t-A[i] 
         if (pair in s): 
-            print([arr[i], pair])
-        s.add(arr[i]) 
+            print([A[i], pair])
+        s.add(A[i]) 
   
-A = [5, 3, 6, 8, 2, 4, 7] 
-n = 10
-pairEqualsTarget(A, n) 
+pairEqualsTarget(A, t) 
+
+
+def numbers_equal_target_sum(A, t):
+    count = 0
+    for n in range(len(A)):
+        for i in range(n + 1, len(A)):
+            if A[n] + A[i]== t:
+                count += 1
+    print(A[n] + A[i])
+            
+print(numbers_equal_target_sum(A, t))
