@@ -93,15 +93,46 @@ class LinkedList():
     
     def rotate(self, head, k):
             
-        if not head  or  k == 0: # if head does not exist
-            return head
+        # if not head  or  k == 0: # if head does not exist
+        #     return head
         
         # find out the length of linked list
         # Divide length by k (k/self.length)
         # Use modulo for remainder
         # modulo result  = amount of times to shift to left
         # return new linked list
-        remainder = self.length % k
+        # remainder = self.length % k
+        
+        if not head or k==0:
+            return head
+        
+        # finding the length of list and last node to connect
+        self.length = 0
+        tail = head
+        while tail.next:
+            self.length+= 1
+            tail = tail.next
+        
+        # set the new value for k to be the mod of k and the length +1
+        k = k%(self.length+1)
+        
+        # if mod rotation equal to length then return 
+        if k == (self.length+1):
+            return head
+        
+        # otherwise find the new head
+        newhead= head
+        i = 0
+        while i < self.length-k:
+            newhead = newhead.next
+            i+= 1
+        
+        # reconnect the list to make the rotation
+        tail.next = head
+        head = newhead.next
+        newhead.next = None
+        
+        return head
         
         
 LL = LinkedList() # initialize an empty linked list
