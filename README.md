@@ -1,4 +1,4 @@
-# Coding Challenge
+# Coding Challenges
 ## Best Practices for Technical Interviews
 
 **1. Restate the Question**
