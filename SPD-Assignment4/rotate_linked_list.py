@@ -103,7 +103,7 @@ class LinkedList():
         # return new linked list
         # remainder = self.length % k
         
-        if not head or k==0:
+        if not head or k==0: # if head doesn't exist or if rotation amount is 0.
             return head
         
         # finding the length of list and last node to connect
